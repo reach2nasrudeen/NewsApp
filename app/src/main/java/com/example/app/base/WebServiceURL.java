@@ -1,8 +1,7 @@
 package com.example.app.base;
 
 
-
-public class WebServiceURL implements AppConstants{
+public class WebServiceURL implements AppConstants {
 
     public static String BASE_URL = "https://newsapi.org/v1/";
 

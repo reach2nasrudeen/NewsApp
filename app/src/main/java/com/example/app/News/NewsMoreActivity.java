@@ -1,15 +1,10 @@
 package com.example.app.News;
 
-import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.v4.view.GravityCompat;
 import android.view.KeyEvent;
-import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
 
 import com.example.app.R;
 import com.example.app.base.BaseActivity;

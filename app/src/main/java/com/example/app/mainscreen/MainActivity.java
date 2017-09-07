@@ -16,6 +16,7 @@ public class MainActivity extends BaseActivity implements MainViewDelegate {
     private RecyclerView recyclerView;
     private MainViewModel viewModel;
     private SourceListAdapter sourceListAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +37,7 @@ public class MainActivity extends BaseActivity implements MainViewDelegate {
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(mLayoutManager);
 
-        sourceListAdapter = new SourceListAdapter(this, new ArrayList<Source>(),this);
+        sourceListAdapter = new SourceListAdapter(this, new ArrayList<Source>(), this);
         recyclerView.setAdapter(sourceListAdapter);
     }
 
@@ -47,6 +48,6 @@ public class MainActivity extends BaseActivity implements MainViewDelegate {
 
     @Override
     public void onSourceSelected(Source source) {
-        startActivity(new Intent(this, NewsActivity.class).putExtra("sourceId",source.getId()));
+        startActivity(new Intent(this, NewsActivity.class).putExtra("sourceId", source.getId()));
     }
 }
